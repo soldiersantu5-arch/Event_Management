@@ -1,0 +1,32 @@
+# Event Management System Dependencies
+
+1. MySQL Connector
+   - GroupId: mysql
+   - ArtifactId: mysql-connector-java
+   - Version: 8.0.33
+   - Purpose: Connect Java application to MySQL database
+
+2. SLF4J Logging API
+   - GroupId: org.slf4j
+   - ArtifactId: slf4j-api
+   - Version: 2.0.12
+   - Purpose: Logging API for Java applications
+
+3. SLF4J Simple Implementation
+   - GroupId: org.slf4j
+   - ArtifactId: slf4j-simple
+   - Version: 2.0.12
+   - Purpose: Simple logger implementation for SLF4J
+
+4. Maven Exec Plugin
+   - GroupId: org.codehaus.mojo
+   - ArtifactId: exec-maven-plugin
+   - Version: 3.1.0
+   - Purpose: Allows running Java classes from Maven (used to launch App.java)
+
+# Notes
+- All dependencies are managed via Maven in the `pom.xml` file.
+- Ensure your `pom.xml` versions match these to avoid conflicts.
+- MySQL Connector is required to connect to your local MySQL database.
+- SLF4J dependencies are used for logging (optional, but recommended for debug info).
+- Maven Exec Plugin is necessary to run the application using `mvn exec:java`.
